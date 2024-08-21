@@ -55,6 +55,4 @@ end
 % FUNCTION SYNTAX
 % generateArraysAndPlot(NameOfTheImportedTable,distanceColumnIndex,AltitudeColumnIndex,gapMinorValue,Gap,MajorGapValue)
 %----------------------------------------------------------------------------
-generateArraysAndPlot(randombookduplicate,2,3,0,2,50)
-
 
