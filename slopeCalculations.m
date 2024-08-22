@@ -6,7 +6,7 @@ function generateArraysAndPlot(table,distanceCol,altCol,minor,gap,major)
     slopeColumn = zeros(rows,1);
     
     for i = 2:rows
-        slopeColumn(i) = (bookMatrix(i,distanceCol)-bookMatrix(i-1,distanceCol))/(bookMatrix(i,altCol)-bookMatrix(i-1,altCol));
+        slopeColumn(i) = (bookMatrix(i,altCol)-bookMatrix(i-1,altCol))/(bookMatrix(i,distanceCol)-bookMatrix(i-1,distanceCol));
     end
     
     slopeColumn(isinf(slopeColumn)) = 0;
